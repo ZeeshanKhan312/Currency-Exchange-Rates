@@ -1,0 +1,91 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh ;
+    background: #675AFE;
+}
+.wrapper{
+    background: #fff;
+    width: 450px;
+    padding: 30px;
+    border-radius: 8px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 500px;
+    text-align: center;
+}
+.wrapper form{
+    margin: 35px 20px 20px 0; /* top-right-down-left*/
+       
+}
+form :where(input,select){
+    outline: none;
+    border-radius: 7px;
+    border:none;
+}
+form p{
+    font-size: 22px;
+    font-weight: 400px;
+    margin-bottom: 5px;
+}
+form input{
+    width:45%;
+    height: 35px;
+    font-size: 20px;
+    padding: 0 10px;
+    border: 1px solid black;
+    float: left;
+    margin-bottom: 20px;
+}
+form input:last-child{
+    float: right;
+}
+form input:focus{  /* when clicked on this input box will do these things */  
+     border: 2px solid #5c4dff;
+}
+form .country{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.country .select-box{
+    display: flex;
+    width: 165px;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.select-box select{
+    width: auto;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+.select-box img{
+    max-width: 45px;
+}
+
+.country .swap{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+form .exchangeRates{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
