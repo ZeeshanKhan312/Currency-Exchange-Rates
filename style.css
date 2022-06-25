@@ -20,12 +20,12 @@ body{
 }
 .wrapper header{
     font-size: 30px;
-    font-weight: 500px;
+    font-weight: 600px;
     text-align: center;
     text-decoration: underline;
 }
 .wrapper form{
-    margin: 35px 20px 20px 0; /* top-right-down-left*/  
+    margin: 32px 20px 20px 0; /* top-right-down-left*/  
 }
 form :where(input,select){
     outline: none;
