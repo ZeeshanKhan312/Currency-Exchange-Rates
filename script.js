@@ -1,6 +1,6 @@
 //HTML Elements
 const  country=document.querySelectorAll(".country select")
-const swap = document.getElementById('swap');
+const swaps = document.querySelector('.country .swap');
 // const currencyOne=document.getElementById()
 
 for(let i=0;i<country.length;i++){
@@ -54,10 +54,13 @@ amountEl_one.addEventListener('input', calculate);
 currencyEl_two.addEventListener('change', calculate);
 amountEl_two.addEventListener('input', calculate);
 
-// swap.addEventListener('click', () => { //swapping the function
-//     const temp = currencyEl_one.value;
-//     currencyEl_one.value = currencyEl_two.value;
-//     currencyEl_two.value = temp;
-//     calculate();
-// })
+swaps.addEventListener('click', () => { //swapping the function
+    const temp = currencyEl_one.value;
+    currencyEl_one.value = currencyEl_two.value;
+    currencyEl_two.value = temp;
+    loadFlag(currencyEl_one);
+    loadFlag(currencyEl_two);
+    calculate();
+});
+
 calculate();

@@ -22,10 +22,10 @@ body{
     font-size: 30px;
     font-weight: 500px;
     text-align: center;
+    text-decoration: underline;
 }
 .wrapper form{
-    margin: 35px 20px 20px 0; /* top-right-down-left*/
-       
+    margin: 35px 20px 20px 0; /* top-right-down-left*/  
 }
 form :where(input,select){
     outline: none;
@@ -90,3 +90,40 @@ form .exchangeRates{
     color:rgb(102, 102, 215)
 }
 
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        width: 300px;
+        padding: 20px;
+    }
+    .wrapper header{
+        font-size: 22px;
+    }
+    .wrapper form{
+        margin: 22px 20px 20px 0; /* top-right-down-left*/  
+    }
+    form p{
+        font-size: 18px;
+    }
+    .country .select-box{
+        width: 108px;
+        height: 35px;
+    }
+    .select-box select{
+        font-size: 15px;
+    }
+    .select-box img{
+        max-width: 27px;
+    }
+    .country .swap{
+        font-size: 21px;
+    }
+    form input{
+        height: 30px;
+        font-size: 17px;
+        margin-bottom: 16px;
+    }
+    form .exchangeRates{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
